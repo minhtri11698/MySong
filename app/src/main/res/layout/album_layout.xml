@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/rlalbum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#B976EC"
+        android:padding="5dp">
+        <TextView
+            android:layout_marginStart="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Album hot"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:id="@+id/albumtitle"
+            android:textColor="#000"/>
+        <TextView
+            android:id="@+id/albumxemthem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:text="Xem them"
+            android:layout_alignParentEnd="true"
+            android:textSize="15sp"
+            android:textColor="#182"/>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/albumrecycle"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/rlalbum"/>
+
+</RelativeLayout>

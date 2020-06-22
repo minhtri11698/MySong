@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:elevation="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/songlistindex"/>
+        <TextView
+            android:paddingStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="250dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:layout_toEndOf="@id/songlistindex"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:id="@+id/songlistname"/>
+        <TextView
+            android:text="tencasi"
+            android:paddingStart="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/songlistsinger"
+            android:layout_below="@id/songlistname"
+            android:layout_toEndOf="@id/songlistindex"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:textSize="15sp"/>
+        <ImageView
+            android:layout_margin="5dp"
+            android:src="@drawable/like"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/likenumber"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
